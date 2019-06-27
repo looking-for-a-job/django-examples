@@ -1,0 +1,8 @@
+- model: app.MyModel
+  pk: 1
+  fields:
+    pub_date: "2001-01-01 12:00:00"
+- model: app.MyModel
+  pk: 2
+  fields:
+    pub_date: "2002-02-02 12:00:00"

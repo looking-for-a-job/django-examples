@@ -1,0 +1,15 @@
+- model: app.MyModel
+  pk: 1
+  fields:
+    a: 2
+    b: 3
+- model: app.MyModel
+  pk: 2
+  fields:
+    a: 3
+    b: 4
+- model: app.MyModel
+  pk: 3
+  fields:
+    a: 4
+    b: 5

@@ -1,0 +1,11 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#wordwrap
+
+{{ "Joel is a slug,"|wordwrap:5 }}
+
+{% comment %}
+input:  Joel is a slug
+output:
+Joel
+is a
+slug
+{% endcomment %}

@@ -1,0 +1,21 @@
+- model: app.Question
+  pk: 1
+  fields:
+    text: "Question1 text"
+- model: app.Question
+  pk: 2
+  fields:
+    text: "Question2 text"
+
+- model: app.Answer
+  pk: 1
+  fields:
+    question_id: 1
+- model: app.Answer
+  pk: 2
+  fields:
+    question_id: 2
+- model: app.Answer
+  pk: 3
+  fields:
+    question_id: 1

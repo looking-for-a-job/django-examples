@@ -1,0 +1,9 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#for-empty
+
+<ul>
+{% for i in "" %}
+    <li>{{ i }}</li>
+{% empty %}
+    <li>list empty!</li>
+{% endfor %}
+<ul>

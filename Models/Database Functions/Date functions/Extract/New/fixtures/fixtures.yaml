@@ -1,0 +1,9 @@
+- model: app.MyModel
+  pk: 1
+  fields:
+    name: "name1"
+- model: app.MyModel
+  pk: 2
+  fields:
+    alias: "alias2"
+    name: "name2"

@@ -1,0 +1,18 @@
+- model: app.MyModel1
+  fields:
+    title: "title1"
+- model: app.MyModel1
+  fields:
+    title: "title2"
+- model: app.MyModel2
+  fields:
+    title: "title3"
+- model: app.MyModel2
+  fields:
+    title: "title4"
+- model: app.MyModel3
+  fields:
+    title: "title5"
+- model: app.MyModel3
+  fields:
+    title: "title6"

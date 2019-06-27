@@ -1,0 +1,7 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#firstof
+
+{% firstof True False None %}               {# True #}
+{% firstof "" None "not empty string" %}    {# not empty string #}
+{% firstof 0 1 2 %}                         {# 1 #}
+
+{% firstof var1 var2 var3 "fallback value" %}

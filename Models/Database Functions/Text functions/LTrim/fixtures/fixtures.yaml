@@ -1,0 +1,12 @@
+- model: app.MyModel
+  pk: 1
+  fields:
+    name: "value1 "
+- model: app.MyModel
+  pk: 2
+  fields:
+    name: "   value2  "
+- model: app.MyModel
+  pk: 3
+  fields:
+    name: " value3 "

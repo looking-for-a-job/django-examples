@@ -1,0 +1,10 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#add
+
+{# concat strings #}
+{% with 'django_comments_xtd/js/django_comments_xtd/js/plugin-'|add:"4.2.0"|add:'.js' as static_url %}
+<script src="{{ static_url }}"></script>
+{% endwith %}
+
+{# add integer #}
+{{ 4|add:"2" }}
+

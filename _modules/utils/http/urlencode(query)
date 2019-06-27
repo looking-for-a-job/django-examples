@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+from django.utils.http import urlencode
+
+# https://docs.djangoproject.com/en/dev/ref/utils/#module-django.utils.html
+
+# urlencode(query, doseq=False)
+
+urlencode(text)

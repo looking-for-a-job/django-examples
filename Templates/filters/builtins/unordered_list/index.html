@@ -1,0 +1,19 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#unordered-list
+
+{{ var|unordered_list }}
+
+{% comment %}
+input:  ['States', ['Kansas', ['Lawrence', 'Topeka'], 'Illinois']]
+output:
+<li>States
+<ul>
+        <li>Kansas
+        <ul>
+                <li>Lawrence</li>
+                <li>Topeka</li>
+        </ul>
+        </li>
+        <li>Illinois</li>
+</ul>
+</li>
+{% endcomment %}

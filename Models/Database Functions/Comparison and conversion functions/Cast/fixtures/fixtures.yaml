@@ -1,0 +1,16 @@
+- model: app.MyModel
+  pk: 1
+  fields:
+    integer: 10
+- model: app.MyModel
+  pk: 2
+  fields:
+    integer: 11
+- model: app.MyModel
+  pk: 3
+  fields:
+    integer: 12
+- model: app.MyModel
+  pk: 4
+  fields:
+    integer: 13

@@ -1,0 +1,9 @@
+- model: app.Entry
+  fields:
+    title: title1
+- model: app.Entry
+  fields:
+    title: title2
+- model: app.Entry
+  fields:
+    title: title3

@@ -1,0 +1,8 @@
+- model: app.MyModel
+  pk: 1
+  fields:
+    name: "John"
+- model: app.MyModel
+  pk: 2
+  fields:
+    name: "Margaret"

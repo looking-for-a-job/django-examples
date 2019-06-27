@@ -1,0 +1,20 @@
+- model: app.MyModel
+  pk: 1
+  fields:
+    title: title1
+    published: true
+- model: app.MyModel
+  pk: 2
+  fields:
+    title: title2
+    published: false
+- model: app.MyModel
+  pk: 3
+  fields:
+    title: title3
+    published: false
+- model: app.MyModel
+  pk: 4
+  fields:
+    title: title4
+    published: false

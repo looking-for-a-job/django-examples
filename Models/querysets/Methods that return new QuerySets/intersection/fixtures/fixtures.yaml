@@ -1,0 +1,18 @@
+- model: app.MyModel1
+  fields:
+    value: 1
+- model: app.MyModel1
+  fields:
+    value: 2
+- model: app.MyModel2
+  fields:
+    value: 1
+- model: app.MyModel2
+  fields:
+    value: 3
+- model: app.MyModel3
+  fields:
+    value: 1
+- model: app.MyModel3
+  fields:
+    value: 4

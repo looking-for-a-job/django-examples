@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+from django.db import models
+
+# PostgreSQL - timestamp, MySQL – datetime
+
+
+class MyDateField(models.Field):
+    def db_type(self, connection):
+        if connection.settings_dict['ENGINE'] == 'django.db.backends.mysql':
+            return 'datetime'
+        else:
+            return 'timestamp'
+
+
+class Person(models.Model):
+    name = models.CharField(max_length=80)
+    gender = models.CharField(max_length=1)
+    something_else = MyDateField()

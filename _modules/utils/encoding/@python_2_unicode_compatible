@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+from django.utils.encoding import python_2_unicode_compatible
+
+# https://docs.djangoproject.com/en/dev/ref/utils/#module-django.utils.encoding
+
+
+class Model:
+    @python_2_unicode_compatible
+    def method(self):
+        return "value"
+
+
+value = Model().method()
+print(value, value.__class__)

@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+from django.db import models
+import django
+django.setup()
+
+# https://docs.djangoproject.com/en/dev/ref/models/fields/#validators
+
+
+class model(models.Model):
+    title = models.CharField(max_length=30)
+    pub_date = models.DateField(max_length=30)
+
+    class Meta():
+        app_label = "app"

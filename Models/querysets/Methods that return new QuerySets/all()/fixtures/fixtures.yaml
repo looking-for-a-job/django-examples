@@ -1,0 +1,3 @@
+- model: app.MyModel
+  fields:
+    title: title1

@@ -1,0 +1,9 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#truncatewords-html
+
+{{ "<p>Joel is a slug</p>"|truncatewords_html:2 }}
+
+{% comment %}
+input:   "<p>Joel is a slug</p>", 2
+output:  "<p>Joel is ...</p>"
+{% endcomment %}
+

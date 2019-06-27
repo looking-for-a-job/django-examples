@@ -1,0 +1,14 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#default-if-none
+
+{{ None|default_if_none:"nothing" }}
+{{ value|default_if_none:"nothing" }}
+
+{% comment %}
+    input: None
+    output: "nothing"
+
+    input: ""
+    output: ""
+{% endcomment %}
+
+

@@ -1,0 +1,7 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#for
+
+{% for i in "xxxx" %}
+    {% for j in "xxxx" %}
+        forloop.parentloop.counter = {{ forloop.parentloop.counter }}
+    {% endfor %}
+{% endfor %}

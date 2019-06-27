@@ -1,0 +1,17 @@
+#!/usr/bin/env django
+from django.db import models
+import django
+django.setup()
+
+# https://docs.djangoproject.com/en/dev/ref/models/fields/#unique-for-date
+# enforced by Model.validate_unique()
+
+
+class model(models.Model):
+    title = models.CharField(max_length=30, unique_for_date="pub_date")
+    # title = models.CharField(max_length=30, unique_for_month="pub_date")
+    # title = models.CharField(max_length=30, unique_for_year="pub_date")
+    pub_date = models.DateField(max_length=30)
+
+    class Meta():
+        app_label = "app"

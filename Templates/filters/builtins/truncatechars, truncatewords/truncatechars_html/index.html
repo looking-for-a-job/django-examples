@@ -1,0 +1,9 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#truncatechars-html
+
+{{ "<p>Joel is a slug</p>"|truncatechars_html:9 }}
+
+{% comment %}
+input:  "<p>Joel is a slug</p>", 9
+output: "<p>Joel i...</p>"
+{% endcomment %}
+

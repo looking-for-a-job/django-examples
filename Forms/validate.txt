@@ -1,0 +1,25 @@
+f.is_valid() возвращает true если поля заполнены правильно
+f['message'].errors сообщения о ошибке для конкретного поля
+f.errors - список всех ошибок
+
+class ContactForm(forms.Form):
+    subject = forms.CharField(max_length=100)
+    email = forms.EmailField(required=False)
+    message = forms.CharField(widget=forms.Textarea)
+
+    def clean_message(self):
+        message = self.cleaned_data['message']
+        num_words = len(message.split())
+        if num_words < 4:
+            raise forms.ValidationError("Not enough words!")
+        return message
+
+clean_message - кастомная проверка поля message
+
+
+class UserDomainForm(forms.ModelForm):
+    def clean(self):
+        data = self.cleaned_data
+        self._errors = {}
+        raise forms.ValidationError("No tags specified for feed")
+        return data

@@ -1,0 +1,7 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#json-script
+
+{{ value|json_script:"hello-data" }}
+{% comment %}
+input: {'hello': 'world'}
+output: <script id="hello-data" type="application/json">{"hello": "world"}</script>
+{% endcomment %}

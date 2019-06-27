@@ -1,0 +1,12 @@
+- model: app.Entry
+  fields:
+    pub_date: "1999-01-01"
+    expire_date: "1999-12-31"
+- model: app.Entry
+  fields:
+    pub_date: "2000-01-01"
+    expire_date: "2000-12-31"
+- model: app.Entry
+  fields:
+    pub_date: "2001-01-01"
+    expire_date: "2001-12-31"

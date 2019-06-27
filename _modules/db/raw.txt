@@ -1,0 +1,15 @@
+http://docs.djangoproject.com/en/dev/topics/db/sql/
+
+from django.db import connection, transaction
+    cursor = connection.cursor()
+    cursor.execute("UPDATE bar SET foo = 1 WHERE baz = %s", [self.baz])
+    transaction.commit_unless_managed()
+или в случае нескольких БД
+from django.db import connections, transaction
+cursor = connections['my_db_alias'].cursor()
+# Your code here...
+transaction.commit_unless_managed(using='my_db_alias')
+
+
+transaction.commit_unless_managed() выполняет транзакцию
+transaction.commi() в случае локальной БД (default)

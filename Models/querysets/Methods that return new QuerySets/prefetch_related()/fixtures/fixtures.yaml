@@ -1,0 +1,19 @@
+- model: app.Topping
+  pk: 1
+  fields:
+    name: "Topping name1"
+- model: app.Topping
+  pk: 2
+  fields:
+    name: "Topping name2"
+
+- model: app.Pizza
+  pk: 1
+  fields:
+    name: "pizza name1"
+    toppings: [1,2]
+- model: app.Pizza
+  pk: 2
+  fields:
+    name: "pizza name2"
+    toppings: [2]

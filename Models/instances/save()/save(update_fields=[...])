@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+import django
+django.setup()
+
+from djangoproject.models import Blog
+
+
+b = Blog(name='Beatles Blog', tagline='All the latest Beatles news.')
+b.save()
+b.name = "new value"
+b.tagline = "new value"
+
+# https://docs.djangoproject.com/en/dev/ref/models/instances/#specifying-which-fields-to-save
+
+b.save(update_fields=["name"])

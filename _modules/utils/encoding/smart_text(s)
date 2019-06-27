@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+from django.utils.encoding import smart_text
+
+# https://docs.djangoproject.com/en/dev/ref/utils/#module-django.utils.encoding
+
+# smart_text(s, encoding='utf-8', strings_only=False, errors='strict')
+# Returns a str object representing s. Treats bytestrings using the encoding codec
+
+s = smart_text(b"bytestrings")
+print(s, s.__class__)

@@ -1,0 +1,6 @@
+- model: app.MyModel
+  fields:
+    title: title1
+- model: app.MyModel
+  fields:
+    title: title2

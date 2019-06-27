@@ -1,0 +1,15 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#in-operator
+
+{% if "bc" in "abcdef" %}
+  This appears since "bc" is a substring of "abcdef"
+{% endif %}
+
+{% if "hello" in greetings %}
+  If greetings is a list or set, one element of which is the string
+  "hello", this will appear.
+{% endif %}
+
+{% if user in users %}
+  If users is a QuerySet, this will appear if user is an
+  instance that belongs to the QuerySet.
+{% endif %}

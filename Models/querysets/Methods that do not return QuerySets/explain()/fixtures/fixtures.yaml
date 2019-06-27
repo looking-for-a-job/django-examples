@@ -1,0 +1,8 @@
+- model: app.Blog
+  pk: 1
+  fields:
+    name: "blog name"
+- model: app.Entry
+  fields:
+    name: "entry name"
+    blog_id: 1

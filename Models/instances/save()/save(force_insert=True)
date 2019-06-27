@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+import django
+django.setup()
+
+from djangoproject.models import Blog
+
+
+instance = Blog(name='Beatles Blog', tagline='All the latest Beatles news.')
+
+
+# https://docs.djangoproject.com/en/dev/ref/models/instances/#how-django-knows-to-update-vs-insert
+
+instance.save(force_insert=True)

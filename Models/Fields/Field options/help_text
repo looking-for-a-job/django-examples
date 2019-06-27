@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+from django.db import models
+from django.forms import ModelForm
+import django
+django.setup()
+
+# https://docs.djangoproject.com/en/dev/ref/models/fields/#error-messages
+
+
+class Model(models.Model):
+    title = models.CharField(max_length=30, help_text="help_text")
+
+    class Meta():
+        app_label = "app"
+
+
+class Form(ModelForm):
+    class Meta:
+        model = Model
+        fields = ['title']  # required
+
+
+form = Form()
+print(form.as_p())

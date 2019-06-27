@@ -1,0 +1,3 @@
+{% for book in books|dictsort:"author.age" %}
+    * {{ book.title }} ({{ book.author.name }})
+{% endfor %}

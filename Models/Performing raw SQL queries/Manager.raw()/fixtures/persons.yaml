@@ -1,0 +1,12 @@
+- model: app.Person
+  pk: 1
+  fields:
+    first_name: John
+    last_name: Lennon
+    birth_date: 2000-12-31
+- model: app.Person
+  pk: 2
+  fields:
+    first_name: Paul
+    last_name: McCartney
+    birth_date: 2010-10-10

@@ -1,0 +1,13 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#filesizeformat
+
+{{ 123|filesizeformat }}
+{{ 1234|filesizeformat }}
+{{ 123456789|filesizeformat }}
+{{ 1234567890|filesizeformat }}
+
+{% comment %}
+123             123 bytes
+1234            1.2 KB
+123456789       117.7 MB
+1234567890      1.1 GB
+{% endcomment %}

@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+from django.db import models
+import django
+django.setup()
+
+# https://docs.djangoproject.com/en/dev/ref/models/fields/#django.db.models.Field.editable
+# If False, the field will not be displayed in the admin or any other ModelForm. They are also skipped during model validation. Default is True
+
+
+class Model(models.Model):
+    title = models.CharField(max_length=30, help_text="help_text")
+
+    class Meta():
+        app_label = "app"

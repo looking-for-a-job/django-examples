@@ -1,0 +1,9 @@
+https://docs.djangoproject.com/en/dev/ref/templates/builtins/#if
+
+{% if athlete_list %}
+    Number of athletes: {{ athlete_list|length }}
+{% elif athlete_in_locker_room_list %}
+    Athletes should be out of the locker room soon!
+{% else %}
+    No athletes.
+{% endif %}

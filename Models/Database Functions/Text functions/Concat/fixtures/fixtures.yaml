@@ -1,0 +1,10 @@
+- model: app.MyModel
+  pk: 1
+  fields:
+    owner: "user"
+    repo: "dotfiles"
+- model: app.MyModel
+  pk: 2
+  fields:
+    owner: "user"
+    repo: "repo.py"
