@@ -1,26 +1,25 @@
 #!/usr/bin/env python
-from django.conf import settings
-settings.configure()
+import os
 
-settings.DATABASES = {
+SECRET_KEY = os.getenv('SECRET_KEY')
+DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db_name',                      
-        'USER': 'db_user',
-        'PASSWORD': 'db_user_password',
-        'HOST': ''
+        'ENGINE': os.getenv('DB_ENGINE'),
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER',None),
+        'PASSWORD': os.getenv('DB_PASS',None),
+        'HOST': os.getenv('DB_HOST',None),
+        'PORT': os.getenv('DB_PORT',None)
     }
 }
 
-from pgpass import items
-
-item=items.pypi
-settings.DATABASES = {
+DATABASES = {
     'default': {
-        'ENGINE'    : 'django.db.backends.postgresql_psycopg2',
-        'NAME'      : item.database,                      
-        'USER'      : item.user,
-        'PASSWORD'  : item.password,
-        'HOST'      : item.host
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'db_name',
+        'USER': os.getenv('USER'),
+        'PASSWORD': '',
+        'HOST': '127.0.0.1',
+        'PORT': 5432
     }
 }

@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-from .models import MyModel
+from .models import Article
 
 
-MyModel(slug='').save()
+article = Article(headline="article title",content="content")
+article.save()
+
+assert article.slug == "article title"

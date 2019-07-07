@@ -3,7 +3,7 @@ from django.utils.text import slugify
 
 class Article(models.Model):
     headline = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(unique = True, default='')
+    slug = models.SlugField(unique = True, default='' )
     content = models.SlugField(max_length=200, unique=True)
     pub_date = models.DateTimeField(auto_now=True)
 
