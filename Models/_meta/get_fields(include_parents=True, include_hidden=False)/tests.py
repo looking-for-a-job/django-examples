@@ -2,7 +2,7 @@
 from django.contrib.auth.models import User
 
 """
-https://docs.djangoproject.com/en/dev/ref/models/meta/#django.db.models.options.Options.get_field
+https://docs.djangoproject.com/en/dev/ref/models/meta/#django.db.models.options.Options.get_fields
 
 get_fields(include_parents=True, include_hidden=False)
 """
